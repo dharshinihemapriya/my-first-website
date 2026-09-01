@@ -9,74 +9,194 @@
 
 <body>
 
-    <header>
-        <h1>🌊 Explore the Ocean 🌊</h1>
-        <p>Discover the Beauty of Our Blue Planet</p>
-    </header>
-
+    <!-- NAVBAR -->
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Ocean</a>
-        <a href="#life">Marine Life</a>
-        <a href="#tips">Save Our Seas</a>
+        <div class="logo">🌊 Ocean World</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Ocean</a>
+            <a href="#marine">Marine Life</a>
+            <a href="#save">Save Our Seas</a>
+        </div>
+
+        <button onclick="scrollToSection('marine')">Explore Now</button>
     </nav>
 
-    <section id="home">
-        <h2>Welcome to the Ocean World 🐋</h2>
-        <p>
-            Oceans cover most of our planet and are home to millions
-            of amazing plants and animals.
-        </p>
-        <button onclick="showMessage()">Explore More</button>
-    </section>
 
-    <section id="about">
-        <h2>🌊 About the Ocean</h2>
-        <p>
-            The ocean is a vast body of salt water that covers a large
-            part of Earth's surface. It plays an important role in
-            climate, weather and life on Earth.
-        </p>
-    </section>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Explore<br>The Ocean</h1>
 
-    <section id="life">
-        <h2>🐠 Marine Life</h2>
+            <p>
+                Discover the beauty, mystery and amazing life
+                beneath our blue planet.
+            </p>
 
-        <div class="cards">
-            <div class="card">
-                <h3>🐬 Dolphins</h3>
-                <p>Dolphins are intelligent and social marine animals.</p>
-            </div>
-
-            <div class="card">
-                <h3>🐋 Whales</h3>
-                <p>Whales are among the largest animals on Earth.</p>
-            </div>
-
-            <div class="card">
-                <h3>🐢 Sea Turtles</h3>
-                <p>Sea turtles spend most of their lives in the ocean.</p>
-            </div>
+            <button onclick="scrollToSection('about')">
+                Explore More →
+            </button>
         </div>
     </section>
 
-    <section id="tips">
-        <h2>♻️ How Can We Save Our Seas?</h2>
 
-        <ul>
-            <li>Reduce plastic waste</li>
-            <li>Keep beaches clean</li>
-            <li>Protect marine animals</li>
-            <li>Save water</li>
-            <li>Spread awareness about ocean protection</li>
-        </ul>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <p class="small-title">DISCOVER THE BLUE PLANET</p>
+
+        <h2>About the Ocean</h2>
+
+        <p class="description">
+            Oceans cover more than 70% of our planet and are home
+            to millions of amazing plants and animals. They play
+            an important role in keeping Earth healthy.
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>70%</h3>
+                <p>Earth Covered by Ocean</p>
+            </div>
+
+            <div class="stat">
+                <h3>1M+</h3>
+                <p>Marine Species</p>
+            </div>
+
+            <div class="stat">
+                <h3>5</h3>
+                <p>Major Oceans</p>
+            </div>
+
+            <div class="stat">
+                <h3>∞</h3>
+                <p>Ocean Wonders</p>
+            </div>
+
+        </div>
     </section>
 
-    <footer>
-        <p>© 2026 Explore the Ocean | Protect Our Blue Planet 🌍</p>
-    </footer>
 
-    <script src="script.js"></script>
+    <!-- MARINE LIFE -->
+    <section id="marine" class="marine">
 
-</body>
-</html>
+        <p class="small-title">AMAZING CREATURES</p>
+
+        <h2>Explore Marine Life</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-image dolphin"></div>
+                <div class="card-content">
+                    <h3>🐬 Dolphins</h3>
+                    <p>
+                        Intelligent and friendly marine animals
+                        known for their playful nature.
+                    </p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image turtle"></div>
+                <div class="card-content">
+                    <h3>🐢 Sea Turtles</h3>
+                    <p>
+                        Ancient ocean travellers that have lived
+                        in our seas for millions of years.
+                    </p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image whale"></div>
+                <div class="card-content">
+                    <h3>🐋 Blue Whales</h3>
+                    <p>
+                        The largest animals ever known to have
+                        lived on Earth.
+                    </p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image coral"></div>
+                <div class="card-content">
+                    <h3>🪸 Coral Reefs</h3>
+                    <p>
+                        Beautiful underwater ecosystems that
+                        support thousands of marine species.
+                    </p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SAVE OUR SEAS -->
+    <section id="save" class="save">
+
+        <div class="save-content">
+
+            <p class="small-title">PROTECT OUR FUTURE</p>
+
+            <h2>Save Our Seas </h2>
+
+            <p>
+              Our oceans need our help. Reduce plastic, protect marine animals and keep our oceans clean. Together, we can make a difference.
+
+            </p>
+
+            <button onclick="showMessage()">
+               Join the Mission →
+            </button>
+
+        </div>
+
+    </section>
+
+<1-- FEATURES -->
+<section class="features">
+
+            <p class="small-title">WHY OCEANS MATTER</p>
+
+            <h2>Our Ocean Features</h2>
+
+            <div class="feature-box">
+
+                <div>      
+
+              <span></span>
+
+<h3>Blue Planet</h3>
+
+<p>Oceans make our planet beautiful.</p>
+</div>
+</section>
+            <div>
+                <h3>contect</h3>
+                <p>oceanworld@example.com</p>
+                <p>+91 97520 97520</p>
+            </div>
+
+        <div class="copyright">
+            2026 ocean world.all right reserved.
+        </div>
+        
+        <script src="script.js"></script>
+
+
+    </body>
+    </html>
+
